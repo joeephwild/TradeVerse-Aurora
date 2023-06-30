@@ -46,8 +46,8 @@ interface Message {
 const StoreContext = createContext<ContextProps | null>(null);
 
 export const StoreProvider = ({ children }: ContextNode) => {
-  const StoreAddress = "0xAD2a1c78d4333d672d9eD5ca6f82682eac4c148A";
-  const contractInitiate = connectWithContract(StoreAddress, Store);
+  const StoreAddress = "0xB85Ff10D81698FF3528C63417E0F0F51e6B9f0D6";
+  const contractInitiate = connectWithContract(StoreAddress, Store.abi);
   const account = useAccount();
   console.log(account);
 
