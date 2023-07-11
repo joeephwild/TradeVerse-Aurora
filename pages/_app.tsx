@@ -15,9 +15,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ModalProvider
       options={{
-        projectId: "a581fe1b-809a-40f9-a9e5-6ac8683695fc",
-        clientKey: "ccyYA3EfVgH6LjvwxCbdi4E3qdkzjRmZR3t4c0Ot",
-        appId: "9fcfcc9f-a1c7-41eb-afaa-939befdd3b33",
+        projectId: "075b5f9c-7c47-4177-9583-f60057f71215",
+        clientKey: "cgfAoPq26pMSvlv0sGJL4BjMEeM8GGPSD8YfWtss",
+        appId: "dbe8ea35-c8e2-4699-a710-02dcc1413549",
         chains: [Aurora, AuroraTestnet],
         particleWalletEntry: {
           //optional: particle wallet config

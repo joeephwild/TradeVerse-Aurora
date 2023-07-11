@@ -47,7 +47,7 @@ const MyProfile = () => {
       }
     };
 
-    filterForUserStore()
+    filterForUserStore();
   });
   //console.log(streamData)
 
@@ -57,17 +57,21 @@ const MyProfile = () => {
         <div key={i}>
           <div className="flex relative flex-col justify-center w-[100%]">
             <div className="mt-[40px] flex items-center justify-center">
-              <Image
-                src={`${
-                  item.cover
-                    ? `https://gateway.pinata.cloud/ipfs/${item.cover}`
-                    : bgImage
-                }`}
-                width={300}
-                height={500}
-                className=" w-[100vw] h-[240px] object-cover rounded-[8px]"
-                alt="Unsplash"
-              />
+              {item.cover ? (
+                <Image
+                  src={`${
+                    item.cover
+                      ? `https://gateway.pinata.cloud/ipfs/${item.cover}`
+                      : bgImage
+                  }`}
+                  width={300}
+                  height={500}
+                  className=" w-[100vw] h-[240px] object-cover rounded-[8px]"
+                  alt="Unsplash"
+                />
+              ) : (
+                <div className=" w-[100vw] bg-neutral-500 animate-pulse h-[240px] object-cover rounded-[8px]" />
+              )}
             </div>
             <Image
               src={`${

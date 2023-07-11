@@ -82,7 +82,7 @@ const Mainbody = () => {
       )}
 
       {/** product */}
-      <div className="border-b-2 border-Foundation w-full flex !flex-wrap items-start justify-start gap-12 pb-24 w-ful">
+      <div className="border-b-2 border-Foundation w-full grid md:grid-cols-3 xl:grid-cols-4 items-start justify-start gap-12 pb-24 w-ful">
         {allProduct.map((item: Product, i: any) => (
           <ProductCard key={i} {...item} />
         ))}
@@ -90,7 +90,7 @@ const Mainbody = () => {
 
       <div className="flex-col items-start pt-6">
         <h1 className="text-[24px] font-bold">Browse Stores</h1>
-        <div className="border-b-2 border-Foundation w-screen flex !flex-wrap items-start justify-start gap-12 pb-24 w-ful">
+        <div className="border-b-2 border-Foundation w-screen grid md:grid-cols-3 xl:grid-cols-4 items-start justify-start gap-12 pb-24 w-ful">
           {allStore?.map((item: Message, i) => (
             <CategoryCard key={i} {...item} />
           ))}
